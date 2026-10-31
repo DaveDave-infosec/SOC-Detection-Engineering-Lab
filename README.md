@@ -209,19 +209,33 @@ The Splunk search was saved as a report named **`SOC Lab - Windows Failed Intera
 
 ## Portfolio evidence
 
-The following screenshots were collected locally for this project. They can be uploaded into an `evidence/` directory to accompany the README:
+The following screenshots are included in the repository under [`evidence/`](evidence/). Select any screenshot link to view the original image:
 
 | Screenshot | What it demonstrates |
 |---|---|
-| `01-suricata-alerts.png` | Suricata IDS policy alerts visible in Splunk |
-| `02-zeek-network-logs.png` | Zeek connection and DNS telemetry in Splunk |
-| `03-pfsense-firewall-logs.png` | pfSense firewall syslog ingested in Splunk |
-| `04-sysmon-process-creation.png` | Sysmon process creation events from DIEON-SERVER |
-| `05-windows-failed-logons.png` | Event ID 4625 interactive logon investigation |
-| `06-active-directory-security-gpo.png` | AD organizational unit and linked audit GPO |
-| `07-vmnet2-network-architecture.png` | Host-only VMnet2 subnet and disabled VMware DHCP |
+| [`01-suricata-alerts.png`](evidence/01-suricata-alerts.png) | Suricata IDS policy alerts visible in Splunk |
+| [`02-zeek-network-logs.png`](evidence/02-zeek-network-logs.png) | Zeek connection and DNS telemetry in Splunk |
+| [`03-pfsense-firewall-logs.png`](evidence/03-pfsense-firewall-logs.png) | pfSense firewall syslog ingested in Splunk |
+| [`04-sysmon-process-creation.png`](evidence/04-sysmon-process-creation.png) | Sysmon process creation events from DIEON-SERVER |
+| [`05-windows-failed-logons.png`](evidence/05-windows-failed-logons.png) | Event ID 4625 interactive logon investigation |
+| [`06-active-directory-security-gpo.png`](evidence/06-active-directory-security-gpo.png) | AD organizational unit and linked audit GPO |
+| [`07-vmnet2-network-architecture.png`](evidence/07-vmnet2-network-architecture.png) | Host-only VMnet2 subnet and disabled VMware DHCP |
 
-> **Evidence upload status:** The seven PNGs were saved on the local Windows host; their presence in this repository has not yet been confirmed. Avoid uploading secrets, session tokens, or personal information visible in screenshots.
+**Evidence status:** All seven screenshots uploaded and linked below. Screenshots are lab artifacts, not evidence of a production incident.
+
+### Selected evidence previews
+
+**Suricata policy alert triage**
+
+![Suricata alerts in Splunk](evidence/01-suricata-alerts.png)
+
+**Windows failed interactive logons**
+
+![Windows Event ID 4625 investigation](evidence/05-windows-failed-logons.png)
+
+**VMware host-only SOC segment**
+
+![VMnet2 network configuration](evidence/07-vmnet2-network-architecture.png)
 
 ## Limitations and future improvements
 
@@ -237,4 +251,4 @@ The following screenshots were collected locally for this project. They can be u
 
 ---
 
-**Project status:** Core infrastructure and two practical investigations completed. Portfolio screenshots pending upload to the repository.
+**Project status:** Core infrastructure, two practical investigations, and seven portfolio evidence screenshots completed.
